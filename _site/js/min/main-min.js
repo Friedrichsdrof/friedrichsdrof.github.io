@@ -1,0 +1,1 @@
+$(window).scroll(function(){$(window).scrollTop()>1e3&&$("img#asa").animate({bottom:"100px"},1600)}),$("#rechts").on("click",function(){$("#fullscreen").toggleClass("yes")}),$("#fullscreen").on("click",function(){$("#fullscreen").toggleClass("yes")});

@@ -1,0 +1,464 @@
+---
+---
+    
+body
+  margin: 0px
+  text-align: center
+  font-family: 'Open Sans', sans-serif
+  -webkit-font-smoothing: antialiased
+
+a
+  text-decoration: none
+
+#hero
+  background-image: url(/img/hero.jpg)
+  background-position: center
+  background-size: cover
+  height: 800px
+  margin: 15px
+  position: relative
+  .wrapper
+    .text-wrapper
+      text-align: left
+      padding-left: 8em
+      padding-top: 4em
+      width: 750px
+      max-width: 100%
+      box-sizing: border-box
+      h1
+        color: white
+        font-family: 'Cormorant Garamond', serif
+        font-size: 5em
+        font-weight: 300
+        margin-bottom: 0em
+        span
+          color: #dfcbab
+          font-weight: 800
+      p
+        margin-top: 0
+        color: white
+        line-height: 1.6em
+        font-size: .9em
+        font-weight: 300
+
+
+#hero::before
+  content: ''
+  border-left: 2px solid white
+  height: 300px
+  position: absolute
+  left: 5em
+  top: 12em
+
+
+#links
+  height: 50px
+  width: 50px
+  background-color: #414e57
+  position: absolute
+  background-image: url(/img/jf.png)
+  background-repeat: no-repeat
+  background-position: center
+
+#rechts
+  height: 50px
+  width: 50px
+  background-color: #414e57
+  position: absolute
+  right: 0
+  background-image: url(/img/hamburger.svg)
+  background-repeat: no-repeat
+  background-position: center
+  background-size: 34px
+  &:hover
+    cursor: pointer
+
+.text
+  font-size: 1em
+  line-height: 1.7em
+  text-align: left
+  font-family: 'Open Sans', sans-serif
+  color: #5a5a5a
+  font-weight: 300
+
+#fullscreen
+  display: none
+  z-index: 999
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, 0.87)
+  color: white
+  position: fixed
+  top: 0%
+  padding-top: 5em
+  h2
+    color: #60dae8
+    font-family: 'Cormorant Garamond', serif
+    font-size: 3em
+    margin: 0
+  ol
+    padding-left: 0
+    padding-top: 0em
+    list-style: none
+    li
+      color: white
+      padding: 1em
+      font-size: 1.5em
+      list-style: none
+      text-decoration: none
+      &:hover
+        color: #46a4af
+        cursor: pointer
+
+#fullscreen.yes
+  display: block
+
+#area1
+  position: absolute
+  top: 571px
+  box-sizing: border-box
+  background-color: white
+  width: 70%
+  right: 0
+  bottom: 0
+  padding: 2em
+  .wrapper
+    h1
+      text-align: left
+      font-family: 'Cormorant Garamond', serif
+      color: #5f5f5f
+
+#area1::before
+  content: ''
+  border-bottom: 2px solid #dfcbab
+  width: 300px
+  position: absolute
+  left: -15em
+  top: 7em
+
+
+.title
+  font-family: 'Cormorant Garamond', serif
+  color: #5a5a5a
+  font-size: 3em
+  line-height: 1.1em
+  margin-top: .5em
+  margin-bottom: 0em
+
+#area2
+  margin-top: 13em
+  .wrapper
+    background-image: url(/img/back.png)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: contain
+    width: 750px
+    max-width: 90%
+    margin: 0 auto
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    .divgold
+      padding: 1em
+      box-sizing: border-box
+      position: relative
+      h3
+        font-family: 'Cormorant Garamond', serif
+        color: #46a4af
+        font-size: 2em
+        margin-top: .5em
+        margin-bottom: 0em
+      h3::after
+        content: ""
+        border-bottom: 2px solid #dfcbab
+        width: 5%
+        position: absolute
+        top: 3.5em
+        left: 45%
+      p
+        font-size: .9em
+        text-align: left
+        line-height: 1.6em
+        margin-top: 1em
+        font-weight: 300
+        color: #656565
+        letter-spacing: 0.01em
+
+
+
+
+
+
+@media only screen and (max-width: 681px)
+  #hero
+    background-image: url(/img/hero.jpg)
+    background-position: center
+    height: 800px
+    margin: 15px
+    position: relative
+    .wrapper
+      .text-wrapper
+        box-sizing: border-box
+        text-align: left
+        padding-left: 1em
+        padding-top: 7em
+        width: 300px
+        max-width: 100%
+        h1
+          color: white
+          font-family: 'Cormorant Garamond', serif
+          font-size: 3em
+          font-weight: 300
+          margin-bottom: 0em
+          span
+            color: #dfcbab
+            font-weight: 800
+        p
+          margin-top: 0
+          color: white
+          line-height: 1.6em
+          font-size: .9em
+          font-weight: 300
+          max-width: 90%
+
+  #hero::before
+    content: ''
+    border-left: 1px solid white
+    height: 300px
+    position: absolute
+    left: .5em
+    top: 12em
+
+  #area1
+    top: -290px
+    width: 93%
+    position: relative
+    right: -23px
+
+  #area2
+    margin-top: -18em
+    .wrapper
+      width: 750px
+      max-width: 90%
+      margin: 0 auto
+      display: grid
+      grid-template-columns: 1fr
+      .divgold
+        padding: 1em
+        box-sizing: border-box
+        position: relative
+        h3
+          font-family: 'Cormorant Garamond', serif
+          color: #5a5a5a
+          font-size: 2em
+          margin-top: .5em
+          margin-bottom: 0em
+        h3::after
+          content: ""
+          border-bottom: 2px solid #dfcbab
+          width: 5%
+          position: absolute
+          top: 3.5em
+          left: 45%
+        p
+          font-size: .9em
+          text-align: left
+          line-height: 1.6em
+          margin-top: 1em
+          font-weight: 300
+          color: #656565
+          letter-spacing: 0.01em
+
+
+#area3
+  margin-top: 5em
+  border-right: 5px solid #dfcbab
+  .wrapper
+    width: 900px
+    max-width: 90%
+    margin: 0 auto
+    display: grid
+    grid-template-columns: 1fr 1fr
+    .bild::after
+      content: ""
+      border-right: 1px solid #47787e
+      height: 300px
+      position: absolute
+      left: 60px
+    .bild
+      background-color: #414e57
+      height: 300px
+      width: 600px
+      position: relative
+      img
+        position: absolute
+        left: 35px
+        top: 10px
+    .text
+      padding-left: 2em
+
+@media only screen and (max-width: 850px)
+  #area3
+    margin-top: 1em
+    .wrapper
+      display: block
+      .bild::after
+        height: 150px
+        position: absolute
+        left: 49px
+        top: -9px
+      .bild
+        height: auto
+        max-width: 90%
+        img
+          position: relative
+          left: 35px
+          top: 10px
+      .text
+        padding-top: 2em
+        padding-left: 0em
+        .title
+          text-align: center
+
+#area4
+  margin-top: 3em
+  .wrapper
+    h2
+      margin-bottom: 1em
+
+#area5
+  margin-top: 6em
+  border-left: 5px solid #dfcbab
+  border-right: 5px solid #dfcbab
+  .wrapper
+    background-image: url(/img/pattern.png)
+    background-repeat: no-repeat
+    background-position: center
+    h2
+      margin-bottom: 1em
+    .text
+      text-align: center
+
+img
+  max-width: 100%
+
+footer
+  margin-top: 6em
+  .wrapper
+    height: 300px
+    background-color: #414e57
+    display: flex
+    justify-content: space-around
+    align-items: center
+    .links
+      text-align: left
+      h3
+        color: #50aeb8
+        font-family: 'Cormorant Garamond', serif
+        margin: 0
+        font-size: 1.9em
+      p
+        margin-top: .5em
+        color: white
+        line-height: 1.5em
+    .rechts
+      text-align: left
+      h3
+        color: #50aeb8
+        font-family: 'Cormorant Garamond', serif
+        margin: 0
+        font-size: 1.9em
+      .gez
+        margin-top: .5em
+        color: white
+        line-height: 1.5em
+        display: flex
+        justify-content: space-between
+        .zeit
+          padding-left: 1em
+          span
+            font-weight: 800
+
+  .fot
+    height: 50px
+    background-color: #313a41
+    display: flex
+    justify-content: center
+    align-items: center
+    ul
+      margin: 0
+      padding-left: 0
+      li
+        display: inline-block
+        color: white
+        padding-left: 1em
+        font-size: .9em
+        &:hover
+          color: #46a4af
+          cursor: pointer
+
+@media only screen and (max-width: 500px)
+  footer
+    margin-top: 5em
+    .wrapper
+      padding: 2em
+      justify-content: center
+      align-items: flex-start
+      flex-direction: column
+      .links
+        text-align: left
+        h3
+          color: #50aeb8
+          font-family: 'Cormorant Garamond', serif
+          margin: 0
+          font-size: 1.9em
+        p
+          margin-top: .5em
+          color: white
+          font-size: .9em
+          line-height: 1.5em
+      .rechts
+        text-align: left
+        margin-top: 1em
+        h3
+          color: #50aeb8
+          font-family: 'Cormorant Garamond', serif
+          margin: 0
+          font-size: 1.9em
+        .gez
+          margin-top: .5em
+          color: white
+          line-height: 1.5em
+          display: flex
+          justify-content: space-between
+          font-size: .9em
+          .zeit
+            padding-left: 1em
+            font-size: .9em
+            span
+              font-weight: 800
+
+
+#area-page
+  margin-top: 5em
+  .wrapper
+    width: 750px
+    max-width: 90%
+    margin: 0 auto
+    h1
+      padding-bottom: .5em
+      font-size: 3em
+    h3
+      color: #46a4af
+      line-height: 1.5em
+      padding-top: 3.5em
+      span
+        color: #a2a2a2
+
+
+#hero.page
+  background-image: url(/img/hero.jpg)
+  background-position: center
+  background-size: cover
+  height: 700px
+  margin: 15px
+  position: relative
