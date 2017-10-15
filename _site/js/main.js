@@ -1,6 +1,6 @@
 $(window).scroll(function() {
-  if ($(window).scrollTop() > 1000) {
-    $("img#asa").animate({bottom: '100px'}, 1600);
+  if ($(window).scrollTop() > 100) {
+    $("img.goldicon").animate({left: '0px'}, 1600);
   }
 });
 

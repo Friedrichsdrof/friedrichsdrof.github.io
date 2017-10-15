@@ -67,6 +67,18 @@ a {
   #rechts:hover {
     cursor: pointer; }
 
+#unten {
+  position: absolute;
+  right: 15px;
+  bottom: 16em;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 90px; }
+
+@media only screen and (max-width: 681px) {
+  #unten {
+    bottom: 18em; } }
 .text {
   font-size: 1em;
   line-height: 1.7em;
@@ -136,6 +148,10 @@ a {
   line-height: 1.1em;
   margin-top: 0.5em;
   margin-bottom: 0em; }
+
+.goldicon {
+  position: relative;
+  left: -690px; }
 
 #area2 {
   margin-top: 13em; }
