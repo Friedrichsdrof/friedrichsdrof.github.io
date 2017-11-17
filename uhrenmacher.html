@@ -4,10 +4,14 @@
 
     <!-- Normalize HTML5 Reset -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+    
+     <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
     <!-- styles.css Link -->
     <link rel="stylesheet" href="/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Open+Sans" rel="stylesheet">
+    
     <!-- charset -->
     <meta charset="UTF-8">
 
@@ -17,41 +21,56 @@
 </head>
 <body>
 
-<section id="hero" class="page">
-  <div class="wrapper">
 
-    <div id="links"></div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-    <div id="rechts"></div>
+  <a class="navbar-brand" href="#"><img src="/img/jf.png" alt=""></a>
 
-    <div class="text-wrapper">
-      <img src="/img/icon.png" alt="">
-      <h1>Unser <span>Uhrenmacher</span> in Friedrichsdorf</h1>
-      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-        sed diam nonumy eirmod tempor invidunt ut labore et dolore
-        magna aliquyam erat, sed diam voluptua. </p>
-    </div>
+  <!--Button Knopf-->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+
+    <ul class="navbar-nav">
+
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Goldankauf</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Uhrenmacher</a>
+      </li>
+
+    </ul>
 
   </div>
-</section>
+
+</nav>
 
 
-<div id="fullscreen">
-  <h2>Menü</h2>
-  <ol>
-        <a href="index.html"><li>Home</li></a>
-        <a href="goldankauf.html"><li>Goldankauf</li></a>
-        <a href="uhrenmacher.html"><li>Uhrenmacher</li></a>
-        <a href="impressum.html"><li>Impressum</li></a>
-  </ol>
+
+ <!-- Hero Image -->
+
+<div class="jumbotron">
+  <div class="container">
+    <img id="icon2" src="/img/icon 2.png" alt="">
+    <h1>Ihr <span class="golden">Uhrenmacher</span> in Frankenthal</h1>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+    <button type="button" class="btn btn-warning">Kontakt</button>
+  </div>
 </div>
 
+<div class="container" id="area1">
 
+<h2>Uhren</h2>
 
-<section id="area-page">
-  <div class="wrapper">
-    <h1 class="title">Uhren</h1>
-    <p class="text">In dieser Realität ist nichts kostbarer als die Zeit.
+<p>In dieser Realität ist nichts kostbarer als die Zeit.
       Nicht umsonst heisst es: "Zeit ist Geld."
       Treffsicherer könnte diese Aussage nicht sein.
       <br><br>
@@ -76,70 +95,55 @@ Wir bieten Ihnen elegante und zeitlose Damen- und Herrenuhren an,
 welche Sie für jeden Anlass tragen können und das zu günstigen Preisen.
 Kommen Sie in unsere Filiale und lassen Sie sich von unserem Sortiment
 überraschen. Wir helfen Ihnen bei der Auswahl und finden das Passende für Sie!</p>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+
+<div class="container">
+  <div class="card">
+  <div class="card-body">
+    Besuchen Sie uns in unserer Filiale <strong class="gold">"Goldankauf Frankenthal" am Rathausplatz 14 in 67227 Frankenthal</strong> und lassen Sie sich von uns überzeugen. Wir machen Ihnen ein stets ein faires und hohes Angebot!
   </div>
-</section>
+</div>
+
+</div>
+
+
+<br>
+<br>
 
 
 
-
-
-<!-- Responsive Shizz -->
-
-<section id="area5">
-  <div class="wrapper">
-    <h2 class="title">Anfahrt</h2>
-    <img src="/img/map.jpg" alt="">
-  </div>
-</section>
 
 
 <!-- Footer -->
 
 <footer>
-  <div class="wrapper">
+ 
+    <p>©2017 Lukasz Adam, All Rights Reserved</p>
 
-    <div class="links">
-      <h3>Goldankauf Fein</h3>
-      <p>Karlstr. 8<br>
-         56123 Wiesbaden<br>
-         052 338 27</p>
-    </div>
+</footer>
 
-    <div class="rechts">
-      <h3>Öffnungszeiten</h3>
 
-      <div class="gez">
-        <div>Montag - Freitag</div>
-        <div class="zeit">12:00 - 18:00</div>
-      </div>
 
-      <div class="gez">
-        <div>Samstag</div>
-        <div class="zeit">12:00 - 18:00</div>
-      </div>
-
-      <div class="gez">
-        <div>Sonntag</div>
-        <div class="zeit"><span id="fat">Geschlossen</span></div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<div class="fot">
-  <ul>
-    <li>Home</li>
-    <li>Goldankauf</li>
-    <li>Silber</li>
-    <li>Impressum</li>
-  </ul>
-</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
 
 </body>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="js/main.js"></script>
 </html>
