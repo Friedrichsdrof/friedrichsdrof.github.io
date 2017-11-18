@@ -1,13 +1,18 @@
 <html>
   <head>
-    <title>Impressum</title>
+    <title>Goldankauf Frankenthal - Impressum</title>
 
     <!-- Normalize HTML5 Reset -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
 
+    
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    
     <!-- styles.css Link -->
     <link rel="stylesheet" href="/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Open+Sans" rel="stylesheet">
+    
     <!-- charset -->
     <meta charset="UTF-8">
 
@@ -17,111 +22,91 @@
 </head>
 <body>
 
-<section id="hero" class="page">
-  <div class="wrapper">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-    <div id="links"></div>
+<a class="navbar-brand" href="http://www.goldankauf-frankenthal.de"><img src="/img/jf.png" alt=""></a>
+  
+  <!--Button Knopf-->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <div id="rechts"></div>
+  <div class="collapse navbar-collapse" id="navbarNav">
 
-    <div class="text-wrapper">
-      <img src="/img/icon.png" alt="">
-      <h1>Unser <span>Juwelier</span> in Friedrichsdorf</h1>
-      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-        sed diam nonumy eirmod tempor invidunt ut labore et dolore
-        magna aliquyam erat, sed diam voluptua. </p>
-    </div>
+    <ul class="navbar-nav">
+
+      <li class="nav-item active">
+        <a class="nav-link" href="http://www.goldankauf-frankenthal.de">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="http://www.goldankauf-frankenthal.de/goldankauf.html">Goldankauf</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="http://www.goldankauf-frankenthal.de/uhrenmacher.html">Uhrenmacher</a>
+      </li>
+
+    </ul>
 
   </div>
-</section>
+
+</nav>
 
 
-<div id="fullscreen">
-  <h2>Menü</h2>
-  <ol>
-        <a href="index.html"><li>Home</li></a>
-        <a href="goldankauf.html"><li>Goldankauf</li></a>
-        <a href="uhrenmacher.html"><li>Uhrenmacher</li></a>
-        <a href="impressum.html"><li>Impressum</li></a>
-  </ol>
+
+ <!-- Hero Image -->
+
+<div class="jumbotron">
+  <div class="container">
+    <img id="icon2" src="/img/icon.png" alt="">
+    <h1>Ihr <span class="golden">Juwelier</span> in Frankenthal</h1>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+    <button type="button" class="btn btn-warning">Kontakt</button>
+  </div>
 </div>
 
+<div class="container" id="area1">
 
+<h2>Unser Geschäft</h2>
 
-<section id="area-page">
-  <div class="wrapper">
-    <h1 class="title">Impressum</h1>
-    <p class="text">
-      Markus Karatas<br>
-      Str.9<br>
-      6562772 Fried <br>
-      Tel<br>
-      Email<br>
-    </p>
+<p>
+ist noch nicht fertig, sobald wir eine Adresse und ein Geschäft gefunden haben, erscheint das Impressum hier.</p>
+
   </div>
-</section>
 
 
 
 
 
-<!-- Responsive Shizz -->
 
-<section id="area5">
-  <div class="wrapper">
-    <h2 class="title">Anfahrt</h2>
-    <img src="/img/map.jpg" alt="">
-  </div>
-</section>
+
+
+
+
+
+
+
+
+
 
 
 <!-- Footer -->
 
 <footer>
-  <div class="wrapper">
+ 
+    <p>©2017 Lukasz Adam, All Rights Reserved</p>
 
-    <div class="links">
-      <h3>Goldankauf Fein</h3>
-      <p>Karlstr. 8<br>
-         56123 Wiesbaden<br>
-         052 338 27</p>
-    </div>
+</footer>
 
-    <div class="rechts">
-      <h3>Öffnungszeiten</h3>
 
-      <div class="gez">
-        <div>Montag - Freitag</div>
-        <div class="zeit">12:00 - 18:00</div>
-      </div>
 
-      <div class="gez">
-        <div>Samstag</div>
-        <div class="zeit">12:00 - 18:00</div>
-      </div>
-
-      <div class="gez">
-        <div>Sonntag</div>
-        <div class="zeit"><span id="fat">Geschlossen</span></div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<div class="fot">
-  <ul>
-    <li>Home</li>
-    <li>Goldankauf</li>
-    <li>Silber</li>
-    <li>Impressum</li>
-  </ul>
-</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
 
 </body>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="js/main.js"></script>
 </html>
